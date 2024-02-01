@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(77, 201, 39);
+    background: rgb(239, 80, 41);
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -60,4 +60,3 @@ main {
 h2, h3 {
     margin: 0px;
 }
-
