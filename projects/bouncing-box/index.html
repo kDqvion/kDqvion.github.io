@@ -18,7 +18,7 @@
 			left: 400px;  /* <--- Change me! */
 		}
 		.board{
-			height: 100vh;sss
+			height: 100vh;
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -63,8 +63,8 @@
 			
 			// TODO 2 - Variable declarations 
 			var positionX = 0
-			var points = 11
-
+			var points = 0
+			var speed = 10
 			
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -73,7 +73,7 @@
 			*/
 			function update() {
 				/* Your Code to Increase positionX by 10 HERE */
-				positionX = positionX + 10;
+				positionX = positionX + speed;
 				moveBoxTo(positionX)
 				
 			};
@@ -85,6 +85,7 @@
 			*/
 			function handleBoxClick() {
 				positionX = 0;
+				points = points + 1
 				changeBoxText(points);
 			};
 		})();
