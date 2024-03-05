@@ -53,8 +53,8 @@
 			}
 
 			// changes the text displayed on the Box
-			function changeBoxText() {
-				box.text(11);
+			function changeBoxText(newText) {
+				box.text(newText);
 			}
 
 			//////////////////////////////////////////////////////////////////
@@ -86,6 +86,7 @@
 			function handleBoxClick() {
 				positionX = 0;
 				points = points + 1
+				speed = speed + 3
 				changeBoxText(points);
 			};
 		})();
