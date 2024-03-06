@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: rgb(22, 230, 102);
+			background-color: rgb(21, 91, 223);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -72,6 +72,12 @@
 			turn it around! 
 			*/
 			function update() {
+			if (positionX > boardWidth) {
+				speed = -speed
+			}
+			if (positionX < 0) {
+				speed *= -1
+			}
 				/* Your Code to Increase positionX by 10 HERE */
 				positionX = positionX + speed;
 				moveBoxTo(positionX)
